@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import os
-from dataclasses import dataclass, fields
+from dataclasses import dataclass, fields, replace
 from urllib.parse import urlencode
 
 
@@ -28,22 +28,32 @@ class Settings:
     scrape_url: str = freeproxy_world_url("BR")
     emulation: str = "Chrome147"
     max_pages: int = 6
-    # freeproxy.world serves 50 rows on a full page; shorter => last page.
     page_size: int = 50
     page_delay_seconds: float = 1.0
     proxies_file: str = "data/proxies.json"
+    database_url: str = "sqlite:///./data/proxies.db"
     probe_url: str = MEUIP_PROBE_URL
     expect_country: str = "BR"
     validate_timeout_seconds: float = 8.0
-    # High fan-out: most free proxies die on connect; bound with a semaphore.
     validate_concurrency: int = 100
     scrape_timeout_seconds: float = 30.0
+    # Scoring / status
+    score_window: int = 20
+    fast_latency_ms: float = 5000.0
+    dead_after_failures: int = 3
+    retire_after_failures: int = 10
+    # Worker intervals (seconds)
+    countries: str = "BR"
+    scrape_interval_seconds: int = 900
+    validate_pending_interval_seconds: int = 60
+    validate_alive_interval_seconds: int = 600
+    validate_dead_interval_seconds: int = 1800
+    validate_batch_size: int = 200
 
     @classmethod
     def from_env(cls) -> Settings:
         defaults = {f.name: f.default for f in fields(cls)}
         country = os.getenv("COUNTRY", str(defaults["country"])).upper() or "BR"
-
         scrape_url = os.getenv("SCRAPE_URL") or freeproxy_world_url(country)
 
         if "PROBE_URL" in os.environ:
@@ -71,6 +81,7 @@ class Settings:
             page_size=int(env("PAGE_SIZE", "page_size")),
             page_delay_seconds=float(env("PAGE_DELAY_SECONDS", "page_delay_seconds")),
             proxies_file=env("PROXIES_FILE", "proxies_file"),
+            database_url=env("DATABASE_URL", "database_url"),
             probe_url=probe_url,
             expect_country=expect_country,
             validate_timeout_seconds=float(
@@ -80,13 +91,33 @@ class Settings:
             scrape_timeout_seconds=float(
                 env("SCRAPE_TIMEOUT_SECONDS", "scrape_timeout_seconds")
             ),
+            score_window=int(env("SCORE_WINDOW", "score_window")),
+            fast_latency_ms=float(env("FAST_LATENCY_MS", "fast_latency_ms")),
+            dead_after_failures=int(env("DEAD_AFTER_FAILURES", "dead_after_failures")),
+            retire_after_failures=int(
+                env("RETIRE_AFTER_FAILURES", "retire_after_failures")
+            ),
+            countries=env("COUNTRIES", "countries"),
+            scrape_interval_seconds=int(
+                env("SCRAPE_INTERVAL_SECONDS", "scrape_interval_seconds")
+            ),
+            validate_pending_interval_seconds=int(
+                env(
+                    "VALIDATE_PENDING_INTERVAL_SECONDS",
+                    "validate_pending_interval_seconds",
+                )
+            ),
+            validate_alive_interval_seconds=int(
+                env("VALIDATE_ALIVE_INTERVAL_SECONDS", "validate_alive_interval_seconds")
+            ),
+            validate_dead_interval_seconds=int(
+                env("VALIDATE_DEAD_INTERVAL_SECONDS", "validate_dead_interval_seconds")
+            ),
+            validate_batch_size=int(env("VALIDATE_BATCH_SIZE", "validate_batch_size")),
         )
 
 
 def apply_country(settings: Settings, country: str) -> Settings:
-    """Retarget scrape URL / default probe for a country code."""
-    from dataclasses import replace
-
     country = country.upper()
     updates: dict = {
         "country": country,
@@ -99,3 +130,10 @@ def apply_country(settings: Settings, country: str) -> Settings:
         updates["probe_url"] = IPIFY_PROBE_URL
         updates["expect_country"] = ""
     return replace(settings, **updates)
+
+
+def probe_for_country(country: str | None) -> tuple[str, str]:
+    """Return (probe_url, expect_country) for a proxy's country."""
+    if (country or "").upper() == "BR":
+        return MEUIP_PROBE_URL, "BR"
+    return IPIFY_PROBE_URL, ""

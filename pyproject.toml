@@ -1,11 +1,13 @@
 [project]
 name = "scaffold-proxy"
-version = "0.1.0"
-description = "Collect and validate free proxies (BR-first)"
+version = "0.2.0"
+description = "Collect, persist, score, and routinely validate free proxies"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "wreq>=0.12.0",
+    "sqlalchemy>=2.0",
+    "apscheduler>=3.10",
 ]
 
 [project.scripts]
@@ -17,6 +19,3 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/scaffold_proxy"]
-
-[tool.uv]
-dev-dependencies = []

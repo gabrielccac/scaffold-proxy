@@ -1,40 +1,46 @@
 # scaffold-proxy
 
-Collect free proxies from freeproxy.world, store them in a local JSON file, and validate them through an IP-check endpoint.
+Collect free proxies from freeproxy.world, persist them in **SQLite**, score them from recent checks, and re-validate on an in-process schedule.
 
 ## Setup
 
 ```bash
 python3 -m pip install -e .
+python3 -m scaffold_proxy init-db
 ```
 
 ## Usage
 
 ```bash
-# BR (default): meuip probe + expect country=BR
-python3 -m scaffold_proxy scrape --max-pages 6
-python3 -m scaffold_proxy validate --concurrency 100
+# scrape + validate pending (per-proxy probes: BR→meuip, else→ipify)
+python3 -m scaffold_proxy run --country US --max-pages 5
 
-# Other country: auto-switches probe to ipify (no country check)
-python3 -m scaffold_proxy run --country US --max-pages 3 --concurrency 100
+# validate by status
+python3 -m scaffold_proxy validate --status pending --limit 100
+python3 -m scaffold_proxy stats
 
-# Explicit overrides
-python3 -m scaffold_proxy run --country DE \
-  --probe-url https://ipwho.is/ --expect-country DE
+# background worker (scrape + routine rechecks)
+COUNTRIES=BR,US,CA python3 -m scaffold_proxy worker
+
+# migrate old JSON dumps
+python3 -m scaffold_proxy import-json data/proxies_us.json
 ```
 
-Pagination stops when a page is **empty**, has **no new rows**, or is a **short page** (`rows < page_size`, default 50). `--max-pages` remains a safety cap.
+## Status & scoring
 
-## Config
+Statuses: `pending → alive|degraded|dead → retired`  
+Re-seen dead/retired in scrape → reset to **pending** (history kept).  
+Score 0–100 from last `SCORE_WINDOW` checks (uptime, latency, freshness, streak).
 
-| Flag / env | Default |
-|------------|---------|
-| `--country` / `COUNTRY` | `BR` |
-| `--max-pages` / `MAX_PAGES` | `6` |
-| `--page-size` / `PAGE_SIZE` | `50` |
-| `--probe-url` / `PROBE_URL` | BR→meuip, else→ipify |
-| `--expect-country` / `EXPECT_COUNTRY` | BR→`BR`, else→empty |
-| `--concurrency` / `VALIDATE_CONCURRENCY` | `100` |
-| `PROXIES_FILE` | `data/proxies.json` |
+## Config (env)
 
-Alive = probe HTTP 200 with a parseable egress IP, and (if set) matching `expect_country`.
+| Variable | Default |
+|----------|---------|
+| `DATABASE_URL` | `sqlite:///./data/proxies.db` |
+| `COUNTRIES` | `BR` |
+| `SCORE_WINDOW` | `20` |
+| `VALIDATE_CONCURRENCY` | `100` |
+| `SCRAPE_INTERVAL_SECONDS` | `900` |
+| `VALIDATE_PENDING_INTERVAL_SECONDS` | `60` |
+| `VALIDATE_ALIVE_INTERVAL_SECONDS` | `600` |
+| `VALIDATE_DEAD_INTERVAL_SECONDS` | `1800` |
