@@ -3,12 +3,15 @@ from __future__ import annotations
 import asyncio
 import json
 import time
+from collections.abc import Callable
 from datetime import timedelta
 
 from wreq import Client, Emulation, Proxy
 
 from scaffold_proxy.config import Settings
 from scaffold_proxy.models import ProxyRecord, utc_now
+
+ProgressCallback = Callable[[int, int, ProxyRecord], None]
 
 
 def _emulation(name: str):
@@ -31,9 +34,6 @@ def _extract_probe(payload: dict) -> tuple[str | None, str | None]:
         or payload.get("country_code")
         or payload.get("countryCode")
     )
-    if isinstance(country, str) and len(country) > 2:
-        # meuip returns "BR" already; ipwho may return full name — leave as-is
-        pass
     return (str(ip) if ip else None, str(country).upper() if country else None)
 
 
@@ -41,15 +41,8 @@ async def validate_one(
     proxy: ProxyRecord,
     *,
     settings: Settings,
-    client: Client | None = None,
+    client: Client,
 ) -> ProxyRecord:
-    owns_client = client is None
-    if client is None:
-        client = Client(
-            emulation=_emulation(settings.emulation),
-            timeout=timedelta(seconds=settings.validate_timeout_seconds),
-        )
-
     started = time.perf_counter()
     try:
         response = await client.get(
@@ -73,18 +66,15 @@ async def validate_one(
         if not egress_ip:
             return _mark_dead(proxy, "missing_ip", latency_ms)
 
-        country_ok = True
         if settings.expect_country:
-            country_ok = (egress_country or "").upper() == settings.expect_country.upper()
-
-        if not country_ok:
-            return _mark_dead(
-                proxy,
-                f"country_mismatch:{egress_country}",
-                latency_ms,
-                egress_ip=egress_ip,
-                egress_country=egress_country,
-            )
+            if (egress_country or "").upper() != settings.expect_country.upper():
+                return _mark_dead(
+                    proxy,
+                    f"country_mismatch:{egress_country}",
+                    latency_ms,
+                    egress_ip=egress_ip,
+                    egress_country=egress_country,
+                )
 
         return _mark_alive(
             proxy,
@@ -95,11 +85,6 @@ async def validate_one(
     except Exception as exc:  # noqa: BLE001 - classify proxy failures
         latency_ms = (time.perf_counter() - started) * 1000
         return _mark_dead(proxy, f"{type(exc).__name__}:{exc}", latency_ms)
-    finally:
-        if owns_client:
-            close = client.close()
-            if asyncio.iscoroutine(close):
-                await close
 
 
 def _recompute_uptime(proxy: ProxyRecord) -> None:
@@ -150,13 +135,42 @@ async def validate_many(
     proxies: list[ProxyRecord],
     *,
     settings: Settings | None = None,
+    on_progress: ProgressCallback | None = None,
 ) -> list[ProxyRecord]:
+    """Validate many proxies concurrently.
+
+    Uses one shared wreq client and per-request ``proxy=`` so we can fan out
+    aggressively without paying client-construction cost per proxy.
+    Concurrency is capped by ``settings.validate_concurrency``.
+    """
     settings = settings or Settings.from_env()
-    sem = asyncio.Semaphore(settings.validate_concurrency)
+    if not proxies:
+        return []
+
+    concurrency = max(1, settings.validate_concurrency)
+    sem = asyncio.Semaphore(concurrency)
+    total = len(proxies)
+    done = 0
+    lock = asyncio.Lock()
+
+    client = Client(
+        emulation=_emulation(settings.emulation),
+        timeout=timedelta(seconds=settings.validate_timeout_seconds),
+    )
 
     async def _run(proxy: ProxyRecord) -> ProxyRecord:
+        nonlocal done
         async with sem:
-            # Fresh client per proxy avoids sticky proxy/connection pool issues.
-            return await validate_one(proxy, settings=settings)
+            result = await validate_one(proxy, settings=settings, client=client)
+        if on_progress is not None:
+            async with lock:
+                done += 1
+                on_progress(done, total, result)
+        return result
 
-    return list(await asyncio.gather(*[_run(p) for p in proxies]))
+    try:
+        return list(await asyncio.gather(*[_run(p) for p in proxies]))
+    finally:
+        close = client.close()
+        if asyncio.iscoroutine(close):
+            await close

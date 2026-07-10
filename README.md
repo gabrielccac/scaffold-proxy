@@ -30,7 +30,10 @@ python3 -m scaffold_proxy run --max-pages 2 --limit 40
 | `PROXIES_FILE` | `data/proxies.json` |
 | `PROBE_URL` | `https://meuip.martins.eng.br/all.json` |
 | `EXPECT_COUNTRY` | `BR` |
-| `VALIDATE_CONCURRENCY` | `40` |
+| `VALIDATE_CONCURRENCY` | `100` |
+| `VALIDATE_TIMEOUT_SECONDS` | `8` |
 | `MAX_PAGES` | `6` |
+
+Validation fans out with `asyncio` + a semaphore (`VALIDATE_CONCURRENCY`). One shared `wreq` client is reused; each check sets `proxy=` per request so dead proxies fail independently without serializing the batch.
 
 A proxy is **alive** when the probe returns HTTP 200 JSON with an egress IP and `country == BR`.

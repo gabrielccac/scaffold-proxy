@@ -82,7 +82,20 @@ async def cmd_validate(settings: Settings, args: argparse.Namespace) -> int:
         f"(expect_country={settings.expect_country}, "
         f"concurrency={settings.validate_concurrency})"
     )
-    checked = await validate_many(proxies, settings=settings)
+
+    def on_progress(done: int, total: int, proxy) -> None:
+        # Print every 10% or on completion so large batches stay observable.
+        step = max(1, total // 10)
+        if done == total or done % step == 0:
+            print(
+                f"  progress {done}/{total} "
+                f"last={proxy.host}:{proxy.port} status={proxy.status}",
+                flush=True,
+            )
+
+    started = asyncio.get_running_loop().time()
+    checked = await validate_many(proxies, settings=settings, on_progress=on_progress)
+    elapsed = asyncio.get_running_loop().time() - started
 
     # merge back into full store
     by_key = {p.key: p for p in store.load()}
@@ -93,7 +106,11 @@ async def cmd_validate(settings: Settings, args: argparse.Namespace) -> int:
 
     alive = sum(1 for p in checked if p.status == "alive")
     dead = sum(1 for p in checked if p.status == "dead")
-    print(f"checked={len(checked)} alive={alive} dead={dead} file={settings.proxies_file}")
+    rate = (len(checked) / elapsed) if elapsed else 0.0
+    print(
+        f"checked={len(checked)} alive={alive} dead={dead} "
+        f"elapsed={elapsed:.1f}s rate={rate:.1f}/s file={settings.proxies_file}"
+    )
     if alive:
         samples = [p.to_dict() for p in checked if p.status == "alive"][:5]
         print("alive_sample=")

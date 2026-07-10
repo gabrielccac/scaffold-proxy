@@ -16,8 +16,9 @@ class Settings:
     proxies_file: str = "data/proxies.json"
     probe_url: str = "https://meuip.martins.eng.br/all.json"
     expect_country: str = "BR"
-    validate_timeout_seconds: float = 10.0
-    validate_concurrency: int = 40
+    validate_timeout_seconds: float = 8.0
+    # High fan-out: most free proxies die on connect; bound with a semaphore.
+    validate_concurrency: int = 100
     scrape_timeout_seconds: float = 30.0
 
     @classmethod
