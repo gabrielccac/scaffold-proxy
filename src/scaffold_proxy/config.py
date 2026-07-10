@@ -35,7 +35,9 @@ class Settings:
             page_delay_seconds=float(env("PAGE_DELAY_SECONDS", "page_delay_seconds")),
             proxies_file=env("PROXIES_FILE", "proxies_file"),
             probe_url=env("PROBE_URL", "probe_url"),
-            expect_country=env("EXPECT_COUNTRY", "expect_country").upper(),
+            expect_country=os.getenv(
+                "EXPECT_COUNTRY", str(defaults["expect_country"])
+            ).upper(),
             validate_timeout_seconds=float(
                 env("VALIDATE_TIMEOUT_SECONDS", "validate_timeout_seconds")
             ),

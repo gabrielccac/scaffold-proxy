@@ -27,14 +27,47 @@ def _proxy_url(proxy: ProxyRecord) -> str:
     return f"http://{proxy.host}:{proxy.port}"
 
 
-def _extract_probe(payload: dict) -> tuple[str | None, str | None]:
+import re
+
+_IP_ONLY_RE = re.compile(
+    r"^\s*(\d{1,3}(?:\.\d{1,3}){3}|[0-9a-fA-F:]+)\s*$"
+)
+
+
+def _extract_probe(body: str) -> tuple[str | None, str | None]:
+    """Parse probe body as JSON object or plain-text IP (e.g. ipify)."""
+    text = body.strip()
+    if not text:
+        return None, None
+
+    try:
+        payload = json.loads(text)
+    except json.JSONDecodeError:
+        m = _IP_ONLY_RE.match(text)
+        return (m.group(1) if m else None, None)
+
+    if isinstance(payload, str):
+        m = _IP_ONLY_RE.match(payload.strip())
+        return (m.group(1) if m else payload.strip() or None, None)
+    if not isinstance(payload, dict):
+        return None, None
+
     ip = payload.get("ip") or payload.get("query") or payload.get("origin")
+    if isinstance(ip, str) and "," in ip:
+        # httpbin may return "client, proxy"
+        ip = ip.split(",")[0].strip()
     country = (
-        payload.get("country")
-        or payload.get("country_code")
+        payload.get("country_code")
         or payload.get("countryCode")
+        or payload.get("country")
     )
-    return (str(ip) if ip else None, str(country).upper() if country else None)
+    if isinstance(country, str) and len(country) != 2:
+        # prefer ISO code fields; full country name is still usable if that's all we have
+        pass
+    return (
+        str(ip).strip() if ip else None,
+        str(country).strip().upper() if country else None,
+    )
 
 
 async def validate_one(
@@ -57,12 +90,7 @@ async def validate_one(
         if status != 200:
             return _mark_dead(proxy, f"http_{status}", latency_ms)
 
-        try:
-            payload = json.loads(body)
-        except json.JSONDecodeError:
-            return _mark_dead(proxy, "invalid_json", latency_ms)
-
-        egress_ip, egress_country = _extract_probe(payload)
+        egress_ip, egress_country = _extract_probe(body)
         if not egress_ip:
             return _mark_dead(proxy, "missing_ip", latency_ms)
 
