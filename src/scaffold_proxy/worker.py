@@ -7,7 +7,7 @@ from dataclasses import replace
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 from scaffold_proxy.collectors.freeproxy_world import scrape_freeproxy_world
-from scaffold_proxy.config import Settings, apply_country
+from scaffold_proxy.config import Settings, apply_country, parse_countries
 from scaffold_proxy.store_db import SqliteProxyStore
 from scaffold_proxy.validator import validate_many
 
@@ -21,11 +21,7 @@ class ProxyWorker:
         self.scheduler = AsyncIOScheduler()
 
     def _countries(self) -> list[str]:
-        return [
-            c.strip().upper()
-            for c in self.settings.countries.split(",")
-            if c.strip()
-        ]
+        return parse_countries(self.settings.countries) or [self.settings.country or "BR"]
 
     async def job_scrape(self) -> None:
         for country in self._countries():

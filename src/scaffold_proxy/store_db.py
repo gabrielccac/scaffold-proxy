@@ -91,14 +91,28 @@ class SqliteProxyStore:
         *,
         status: str | None = None,
         country: str | None = None,
+        countries: list[str] | None = None,
         limit: int | None = None,
         order_by_score: bool = False,
     ) -> list[ProxyRecord]:
         stmt: Select = select(ProxyRow)
         if status and status != "all":
             stmt = stmt.where(ProxyRow.status == status)
+        country_list = list(countries or [])
         if country:
-            stmt = stmt.where(ProxyRow.country == country.upper())
+            country_list.append(country.upper())
+        country_list = [c.upper() for c in country_list if c]
+        # unique preserve order
+        seen: set[str] = set()
+        uniq: list[str] = []
+        for c in country_list:
+            if c not in seen:
+                seen.add(c)
+                uniq.append(c)
+        if len(uniq) == 1:
+            stmt = stmt.where(ProxyRow.country == uniq[0])
+        elif len(uniq) > 1:
+            stmt = stmt.where(ProxyRow.country.in_(uniq))
         if order_by_score:
             stmt = stmt.order_by(desc(ProxyRow.score).nullslast(), asc(ProxyRow.host))
         else:

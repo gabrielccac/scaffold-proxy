@@ -132,6 +132,18 @@ def apply_country(settings: Settings, country: str) -> Settings:
     return replace(settings, **updates)
 
 
+def parse_countries(value: str | None) -> list[str]:
+    """Parse 'BR,US,CA' or 'BR US CA' into unique uppercase codes."""
+    if not value:
+        return []
+    parts = [p.strip().upper() for p in value.replace(";", ",").replace(" ", ",").split(",")]
+    out: list[str] = []
+    for part in parts:
+        if part and part not in out:
+            out.append(part)
+    return out
+
+
 def probe_for_country(country: str | None) -> tuple[str, str]:
     """Return (probe_url, expect_country) for a proxy's country."""
     if (country or "").upper() == "BR":

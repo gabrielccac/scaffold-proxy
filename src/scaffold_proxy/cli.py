@@ -7,7 +7,7 @@ import sys
 from dataclasses import replace
 
 from scaffold_proxy.collectors.freeproxy_world import scrape_freeproxy_world
-from scaffold_proxy.config import Settings, apply_country
+from scaffold_proxy.config import Settings, apply_country, parse_countries
 from scaffold_proxy.db.models import init_db
 from scaffold_proxy.store import ProxyFileStore
 from scaffold_proxy.store_db import SqliteProxyStore
@@ -20,8 +20,14 @@ def _add_country_args(parser: argparse.ArgumentParser) -> None:
         "--country",
         type=str,
         default=None,
-        help="ISO country code for freeproxy.world (default: BR). "
+        help="ISO country code(s), comma-separated (e.g. BR,US,CA). "
         "Non-BR defaults probe to ipify with no country check.",
+    )
+    parser.add_argument(
+        "--countries",
+        type=str,
+        default=None,
+        help="Alias for --country (comma-separated list).",
     )
     parser.add_argument("--max-pages", type=int, default=None)
     parser.add_argument(
@@ -54,7 +60,18 @@ def build_parser() -> argparse.ArgumentParser:
     validate.add_argument("--concurrency", type=int, default=None)
     validate.add_argument("--probe-url", type=str, default=None)
     validate.add_argument("--expect-country", type=str, default=None)
-    validate.add_argument("--country", type=str, default=None)
+    validate.add_argument(
+        "--country",
+        type=str,
+        default=None,
+        help="Filter by country code(s), comma-separated",
+    )
+    validate.add_argument(
+        "--countries",
+        type=str,
+        default=None,
+        help="Alias for --country",
+    )
     validate.add_argument(
         "--status",
         choices=["pending", "alive", "degraded", "dead", "retired", "all"],
@@ -81,13 +98,19 @@ def build_parser() -> argparse.ArgumentParser:
         help="Do not scrape/validate immediately on startup",
     )
     worker.add_argument(
-        "--countries",
+        "--country",
         type=str,
         default=None,
         help="Comma-separated countries (overrides COUNTRIES)",
     )
+    worker.add_argument(
+        "--countries",
+        type=str,
+        default=None,
+        help="Alias for --country",
+    )
 
-    initdb = sub.add_parser("init-db", help="Create SQLite tables")
+    sub.add_parser("init-db", help="Create SQLite tables")
 
     import_json = sub.add_parser("import-json", help="Import a legacy JSON proxy file")
     import_json.add_argument("path", type=str)
@@ -103,9 +126,15 @@ def _store(settings: Settings) -> SqliteProxyStore:
     return SqliteProxyStore(settings.database_url, settings=settings)
 
 
-def _apply_scrape_args(settings: Settings, args: argparse.Namespace) -> Settings:
-    if getattr(args, "country", None):
-        settings = apply_country(settings, args.country)
+def _countries_from_args(args: argparse.Namespace, settings: Settings) -> list[str]:
+    raw = getattr(args, "country", None) or getattr(args, "countries", None)
+    countries = parse_countries(raw)
+    if countries:
+        return countries
+    return parse_countries(settings.countries) or [settings.country or "BR"]
+
+
+def _apply_common_args(settings: Settings, args: argparse.Namespace) -> Settings:
     if getattr(args, "max_pages", None) is not None:
         settings = replace(settings, max_pages=args.max_pages)
     if getattr(args, "page_size", None) is not None:
@@ -116,40 +145,67 @@ def _apply_scrape_args(settings: Settings, args: argparse.Namespace) -> Settings
         settings = replace(settings, expect_country=args.expect_country.upper())
     if getattr(args, "concurrency", None):
         settings = replace(settings, validate_concurrency=args.concurrency)
-    if getattr(args, "countries", None):
-        settings = replace(settings, countries=args.countries)
+    countries = parse_countries(
+        getattr(args, "country", None) or getattr(args, "countries", None)
+    )
+    if countries:
+        settings = replace(settings, countries=",".join(countries))
     return settings
 
 
 async def cmd_scrape(settings: Settings, args: argparse.Namespace) -> int:
-    settings = _apply_scrape_args(settings, args)
+    settings = _apply_common_args(settings, args)
+    countries = _countries_from_args(args, settings)
     store = _store(settings)
+
+    total_scraped = total_inserted = total_refreshed = total_touched = 0
+    for country in countries:
+        country_settings = apply_country(settings, country)
+        # keep shared scrape knobs
+        country_settings = replace(
+            country_settings,
+            max_pages=settings.max_pages,
+            page_size=settings.page_size,
+            scrape_timeout_seconds=settings.scrape_timeout_seconds,
+            page_delay_seconds=settings.page_delay_seconds,
+            emulation=settings.emulation,
+            database_url=settings.database_url,
+        )
+        print(
+            f"scraping country={country} url={country_settings.scrape_url} "
+            f"(max_pages={country_settings.max_pages}, "
+            f"page_size={country_settings.page_size})"
+        )
+        proxies = await scrape_freeproxy_world(country_settings)
+        inserted, refreshed, touched = store.upsert_scraped(proxies)
+        print(
+            f"  country={country} scraped={len(proxies)} inserted={inserted} "
+            f"refreshed_fresh={refreshed} touched={touched}"
+        )
+        total_scraped += len(proxies)
+        total_inserted += inserted
+        total_refreshed += refreshed
+        total_touched += touched
+
     print(
-        f"scraping country={settings.country} url={settings.scrape_url} "
-        f"(max_pages={settings.max_pages}, page_size={settings.page_size})"
-    )
-    proxies = await scrape_freeproxy_world(settings)
-    inserted, refreshed, touched = store.upsert_scraped(proxies)
-    print(
-        f"scraped={len(proxies)} inserted={inserted} refreshed_fresh={refreshed} "
-        f"touched={touched} db={settings.database_url}"
+        f"done countries={countries} scraped={total_scraped} "
+        f"inserted={total_inserted} refreshed_fresh={total_refreshed} "
+        f"touched={total_touched} db={settings.database_url}"
     )
     print("stats=", store.stats())
     return 0
 
 
 async def cmd_validate(settings: Settings, args: argparse.Namespace) -> int:
-    if args.concurrency:
-        settings = replace(settings, validate_concurrency=args.concurrency)
-    if getattr(args, "probe_url", None):
-        settings = replace(settings, probe_url=args.probe_url)
-    if getattr(args, "expect_country", None) is not None:
-        settings = replace(settings, expect_country=args.expect_country.upper())
+    settings = _apply_common_args(settings, args)
+    countries = parse_countries(
+        getattr(args, "country", None) or getattr(args, "countries", None)
+    )
 
     store = _store(settings)
     proxies = store.list(
         status=None if args.status == "all" else args.status,
-        country=args.country,
+        countries=countries or None,
         limit=args.limit,
     )
     if not proxies:
@@ -158,7 +214,8 @@ async def cmd_validate(settings: Settings, args: argparse.Namespace) -> int:
 
     print(
         f"validating {len(proxies)} via per-proxy probes "
-        f"(concurrency={settings.validate_concurrency}, status={args.status})"
+        f"(concurrency={settings.validate_concurrency}, status={args.status}, "
+        f"countries={countries or 'ALL'})"
     )
 
     def on_progress(done: int, total: int, proxy) -> None:
@@ -198,6 +255,7 @@ async def cmd_validate(settings: Settings, args: argparse.Namespace) -> int:
                 [
                     {
                         "key": p.key,
+                        "country": p.country,
                         "status": p.status,
                         "score": p.score,
                         "uptime": p.uptime,
@@ -213,7 +271,8 @@ async def cmd_validate(settings: Settings, args: argparse.Namespace) -> int:
 
 
 async def cmd_run(settings: Settings, args: argparse.Namespace) -> int:
-    settings = _apply_scrape_args(settings, args)
+    settings = _apply_common_args(settings, args)
+    countries = _countries_from_args(args, settings)
     code = await cmd_scrape(settings, args)
     if code != 0:
         return code
@@ -222,9 +281,12 @@ async def cmd_run(settings: Settings, args: argparse.Namespace) -> int:
         concurrency=args.concurrency,
         probe_url=None,
         expect_country=None,
-        country=settings.country,
+        country=",".join(countries),
+        countries=None,
         status="pending",
         use_settings_probe=False,
+        max_pages=None,
+        page_size=None,
     )
     return await cmd_validate(settings, validate_ns)
 
@@ -257,7 +319,9 @@ def cmd_stats(settings: Settings, args: argparse.Namespace) -> int:
 
 
 async def cmd_worker(settings: Settings, args: argparse.Namespace) -> int:
-    settings = _apply_scrape_args(settings, args)
+    settings = _apply_common_args(settings, args)
+    countries = _countries_from_args(args, settings)
+    settings = replace(settings, countries=",".join(countries))
     worker = ProxyWorker(settings)
     await worker.run(run_scrape_first=not args.no_initial_scrape)
     return 0
