@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import os
-from dataclasses import dataclass
+from dataclasses import dataclass, fields
 
 
 @dataclass(frozen=True, slots=True)
@@ -22,26 +22,24 @@ class Settings:
 
     @classmethod
     def from_env(cls) -> Settings:
-        def getenv(name: str, default: str) -> str:
-            return os.getenv(name, default)
+        defaults = {f.name: f.default for f in fields(cls)}
+
+        def env(name: str, key: str) -> str:
+            return os.getenv(name, str(defaults[key]))
 
         return cls(
-            scrape_url=getenv("SCRAPE_URL", cls.scrape_url),
-            emulation=getenv("WREQ_EMULATION", cls.emulation),
-            max_pages=int(getenv("MAX_PAGES", str(cls.max_pages))),
-            page_delay_seconds=float(
-                getenv("PAGE_DELAY_SECONDS", str(cls.page_delay_seconds))
-            ),
-            proxies_file=getenv("PROXIES_FILE", cls.proxies_file),
-            probe_url=getenv("PROBE_URL", cls.probe_url),
-            expect_country=getenv("EXPECT_COUNTRY", cls.expect_country).upper(),
+            scrape_url=env("SCRAPE_URL", "scrape_url"),
+            emulation=env("WREQ_EMULATION", "emulation"),
+            max_pages=int(env("MAX_PAGES", "max_pages")),
+            page_delay_seconds=float(env("PAGE_DELAY_SECONDS", "page_delay_seconds")),
+            proxies_file=env("PROXIES_FILE", "proxies_file"),
+            probe_url=env("PROBE_URL", "probe_url"),
+            expect_country=env("EXPECT_COUNTRY", "expect_country").upper(),
             validate_timeout_seconds=float(
-                getenv("VALIDATE_TIMEOUT_SECONDS", str(cls.validate_timeout_seconds))
+                env("VALIDATE_TIMEOUT_SECONDS", "validate_timeout_seconds")
             ),
-            validate_concurrency=int(
-                getenv("VALIDATE_CONCURRENCY", str(cls.validate_concurrency))
-            ),
+            validate_concurrency=int(env("VALIDATE_CONCURRENCY", "validate_concurrency")),
             scrape_timeout_seconds=float(
-                getenv("SCRAPE_TIMEOUT_SECONDS", str(cls.scrape_timeout_seconds))
+                env("SCRAPE_TIMEOUT_SECONDS", "scrape_timeout_seconds")
             ),
         )
