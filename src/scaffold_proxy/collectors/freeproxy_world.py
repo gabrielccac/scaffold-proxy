@@ -52,24 +52,44 @@ async def scrape_freeproxy_world(settings: Settings | None = None) -> list[Proxy
                 raise RuntimeError(f"Unexpected status {status} on page {page}")
 
             page_proxies = parse_proxy_table(html, source="freeproxy.world")
-            if not page_proxies:
+            page_count = len(page_proxies)
+
+            # Stop: empty table, or short/partial page (last page).
+            if page_count == 0:
+                print(f"page={page} rows=0 stop=empty")
                 break
 
             new_count = 0
             for proxy in page_proxies:
-                if proxy.country is None and "country=BR" in settings.scrape_url:
-                    proxy.country = "BR"
+                if proxy.country is None:
+                    proxy.country = settings.country
                 if proxy.key in seen:
                     continue
                 seen.add(proxy.key)
                 collected.append(proxy)
                 new_count += 1
 
+            print(
+                f"page={page} rows={page_count} new={new_count} "
+                f"total={len(collected)}",
+                flush=True,
+            )
+
             if new_count == 0:
+                print(f"page={page} stop=no_new")
+                break
+
+            if page_count < settings.page_size:
+                print(
+                    f"page={page} stop=short_page "
+                    f"(rows={page_count} < page_size={settings.page_size})"
+                )
                 break
 
             if page < settings.max_pages:
                 await asyncio.sleep(settings.page_delay_seconds)
+        else:
+            print(f"stop=max_pages ({settings.max_pages})")
     finally:
         close = client.close()
         if asyncio.iscoroutine(close):

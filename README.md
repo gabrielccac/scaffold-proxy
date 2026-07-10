@@ -1,39 +1,40 @@
 # scaffold-proxy
 
-Collect free BR proxies from freeproxy.world, store them in a local JSON file, and validate them through a Brazilian IP-check endpoint.
+Collect free proxies from freeproxy.world, store them in a local JSON file, and validate them through an IP-check endpoint.
 
 ## Setup
 
 ```bash
 python3 -m pip install -e .
-# or: pip install wreq && PYTHONPATH=src ...
 ```
 
 ## Usage
 
 ```bash
-# scrape BR list → data/proxies.json
-python3 -m scaffold_proxy scrape --max-pages 3
+# BR (default): meuip probe + expect country=BR
+python3 -m scaffold_proxy scrape --max-pages 6
+python3 -m scaffold_proxy validate --concurrency 100
 
-# validate pending proxies via https://meuip.martins.eng.br/all.json
-python3 -m scaffold_proxy validate --limit 50
+# Other country: auto-switches probe to ipify (no country check)
+python3 -m scaffold_proxy run --country US --max-pages 3 --concurrency 100
 
-# scrape + validate
-python3 -m scaffold_proxy run --max-pages 2 --limit 40
+# Explicit overrides
+python3 -m scaffold_proxy run --country DE \
+  --probe-url https://ipwho.is/ --expect-country DE
 ```
 
-## Config (env)
+Pagination stops when a page is **empty**, has **no new rows**, or is a **short page** (`rows < page_size`, default 50). `--max-pages` remains a safety cap.
 
-| Variable | Default |
-|----------|---------|
-| `WREQ_EMULATION` | `Chrome147` |
+## Config
+
+| Flag / env | Default |
+|------------|---------|
+| `--country` / `COUNTRY` | `BR` |
+| `--max-pages` / `MAX_PAGES` | `6` |
+| `--page-size` / `PAGE_SIZE` | `50` |
+| `--probe-url` / `PROBE_URL` | BR→meuip, else→ipify |
+| `--expect-country` / `EXPECT_COUNTRY` | BR→`BR`, else→empty |
+| `--concurrency` / `VALIDATE_CONCURRENCY` | `100` |
 | `PROXIES_FILE` | `data/proxies.json` |
-| `PROBE_URL` | `https://meuip.martins.eng.br/all.json` |
-| `EXPECT_COUNTRY` | `BR` |
-| `VALIDATE_CONCURRENCY` | `100` |
-| `VALIDATE_TIMEOUT_SECONDS` | `8` |
-| `MAX_PAGES` | `6` |
 
-Validation fans out with `asyncio` + a semaphore (`VALIDATE_CONCURRENCY`). One shared `wreq` client is reused; each check sets `proxy=` per request so dead proxies fail independently without serializing the batch.
-
-A proxy is **alive** when the probe returns HTTP 200 JSON with an egress IP and `country == BR`.
+Alive = probe HTTP 200 with a parseable egress IP, and (if set) matching `expect_country`.
