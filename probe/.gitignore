@@ -1,6 +1,0 @@
-browser_out/*.html
-browser_out/resp_*.txt
-wreq_out/*_p1.html
-wreq_out/*_p2.html
-__pycache__/
-*.pyc
