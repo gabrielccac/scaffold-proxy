@@ -1,0 +1,2058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <title>Free Proxy List Brazil - FreeProxy.World</title>
+    <meta name="keywords" content="Free Proxy World, Free Proxy, HTTP proxy, HTTPS proxy, SOCKS4 proxy, SOCKS5 proxy, Proxy list">
+    <meta name="description" content="Worldwide free proxy list. Free fresh working proxy, including HTTP/SOCKS/SSL">
+    <link rel="stylesheet" href="/css/site.css?v=G49tGwq5sGmELkhx8ty3QPtPFGd-K9RMSd6IxF9GKdo" />
+    <link rel="stylesheet" href="/css/flags.css?v=zITMPjpB4OwDCMkJM7snPmsENJdRBSYU6hPxrykww34">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Ads -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2267767860475779" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a class="logo" href="/">
+                    <img src="/img/logo.png" alt="FreeProxy.World">
+                </a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span>&#9776;</span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a class="active" href="/">Proxy List</a></li>
+                    <li><a class="" href="/Filter/Country">By Country</a></li>
+                    <li><a class="" href="/Filter/Port">By Port</a></li>
+                    <li><a class="" style="color: var(--warning-color);" href="/Promotions">VPN Deals</a></li>
+                    <li><a class="" href="/Donate">Buy Me a Coffee</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+<!-- Filter Section -->
+<div class="filter-section">
+    <form action="" method="get">
+        <div class="d-flex" style="flex-wrap: wrap; gap: 20px;">
+            <div class="form-group" style="flex: 1; min-width: 250px;">
+                <label class="form-label">Proxy Type</label>
+                <div class="radio-group">
+                    <input type="radio" id="type_all" name="type" value="" checked>
+                    <label for="type_all">All</label>
+                    
+                    <input type="radio" id="type_http" name="type" value="http" >
+                    <label for="type_http">HTTP</label>
+                    
+                    <input type="radio" id="type_https" name="type" value="https" >
+                    <label for="type_https">HTTPS</label>
+                    
+                    <input type="radio" id="type_socks4" name="type" value="socks4" >
+                    <label for="type_socks4">SOCKS4</label>
+                    
+                    <input type="radio" id="type_socks5" name="type" value="socks5" >
+                    <label for="type_socks5">SOCKS5</label>
+                </div>
+            </div>
+            
+            <div class="form-group" style="flex: 1; min-width: 200px;">
+                <label class="form-label">Anonymity</label>
+                <div class="radio-group">
+                    <input type="radio" id="anon_all" name="anonymity" value="" checked>
+                    <label for="anon_all">All</label>
+                    
+                    <input type="radio" id="anon_high" name="anonymity" value="4" >
+                    <label for="anon_high">High</label>
+                    
+                    <input type="radio" id="anon_no" name="anonymity" value="1" >
+                    <label for="anon_no">No</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex mt-3" style="flex-wrap: wrap; gap: 15px; align-items: flex-end;">
+            <div class="form-group" style="flex: 2; min-width: 200px;">
+                <label class="form-label">Country</label>
+                <select name="country" class="form-control">
+                    <option value="">All Countries</option>
+                            <option value="US">
+                                United States of America (32506)
+                            </option>
+                            <option value="GB">
+                                United Kingdom of Great Britain and Northern Ireland (2770)
+                            </option>
+                            <option value="BA">
+                                Bosnia and Herzegovina (6)
+                            </option>
+                            <option value="SG">
+                                Singapore (1112)
+                            </option>
+                            <option value="BZ">
+                                Belize (1668)
+                            </option>
+                            <option value="KZ">
+                                Kazakhstan (439)
+                            </option>
+                            <option value="ZA">
+                                South Africa (314)
+                            </option>
+                            <option value="CA">
+                                Canada (814)
+                            </option>
+                            <option value="EE">
+                                Estonia (332)
+                            </option>
+                            <option value="PH">
+                                Philippines (444)
+                            </option>
+                            <option value="CY">
+                                Cyprus (176)
+                            </option>
+                            <option value="BE">
+                                Belgium (1513)
+                            </option>
+                            <option value="UA">
+                                Ukraine (264)
+                            </option>
+                            <option value="SK">
+                                Slovakia (8)
+                            </option>
+                            <option value="BG">
+                                Bulgaria (36)
+                            </option>
+                            <option value="AU">
+                                Australia (284)
+                            </option>
+                            <option value="RU">
+                                Russian Federation (1282)
+                            </option>
+                            <option value="LT">
+                                Lithuania (198)
+                            </option>
+                            <option value="HK">
+                                Hong Kong (304)
+                            </option>
+                            <option value="NL">
+                                Netherlands (Kingdom of the) (1218)
+                            </option>
+                            <option value="TR">
+                                Turkiye (89)
+                            </option>
+                            <option value="CR">
+                                Costa Rica (80)
+                            </option>
+                            <option value="DE">
+                                Germany (893)
+                            </option>
+                            <option value="AE">
+                                United Arab Emirates (82)
+                            </option>
+                            <option value="DK">
+                                Denmark (52)
+                            </option>
+                            <option value="TH">
+                                Thailand (248)
+                            </option>
+                            <option value="FR">
+                                France (243)
+                            </option>
+                            <option value="ID">
+                                Indonesia (1598)
+                            </option>
+                            <option value="JP">
+                                Japan (265)
+                            </option>
+                            <option value="CZ">
+                                Czechia (188)
+                            </option>
+                            <option value="KR">
+                                Korea (the Republic of) (256)
+                            </option>
+                            <option value="IN">
+                                India (421)
+                            </option>
+                            <option value="AM">
+                                Armenia (23)
+                            </option>
+                            <option value="RO">
+                                Romania (184)
+                            </option>
+                            <option value="BR" selected="selected">
+                                Brazil (278)
+                            </option>
+                            <option value="NG">
+                                Nigeria (22)
+                            </option>
+                            <option value="SE">
+                                Sweden (228)
+                            </option>
+                            <option value="BD">
+                                Bangladesh (267)
+                            </option>
+                            <option value="KH">
+                                Cambodia (45)
+                            </option>
+                            <option value="AT">
+                                Austria (179)
+                            </option>
+                            <option value="PL">
+                                Poland (72)
+                            </option>
+                            <option value="MX">
+                                Mexico (221)
+                            </option>
+                            <option value="HR">
+                                Croatia (4)
+                            </option>
+                            <option value="HN">
+                                Honduras (20)
+                            </option>
+                            <option value="CL">
+                                Chile (45)
+                            </option>
+                            <option value="IT">
+                                Italy (80)
+                            </option>
+                            <option value="PY">
+                                Paraguay (38)
+                            </option>
+                            <option value="CW">
+                                Curacao (147)
+                            </option>
+                            <option value="CO">
+                                Colombia (232)
+                            </option>
+                            <option value="VN">
+                                Viet Nam (109)
+                            </option>
+                            <option value="CN">
+                                China (263)
+                            </option>
+                            <option value="ZW">
+                                Zimbabwe (22)
+                            </option>
+                            <option value="ES">
+                                Spain (201)
+                            </option>
+                            <option value="MY">
+                                Malaysia (135)
+                            </option>
+                            <option value="GR">
+                                Greece (5)
+                            </option>
+                            <option value="IQ">
+                                Iraq (20)
+                            </option>
+                            <option value="EG">
+                                Egypt (37)
+                            </option>
+                            <option value="SY">
+                                Syrian Arab Republic (21)
+                            </option>
+                            <option value="FI">
+                                Finland (41)
+                            </option>
+                            <option value="AR">
+                                Argentina (118)
+                            </option>
+                            <option value="IR">
+                                Iran (Islamic Republic of) (73)
+                            </option>
+                            <option value="KE">
+                                Kenya (27)
+                            </option>
+                            <option value="GT">
+                                Guatemala (32)
+                            </option>
+                            <option value="BF">
+                                Burkina Faso (3)
+                            </option>
+                            <option value="LV">
+                                Latvia (15)
+                            </option>
+                            <option value="JM">
+                                Jamaica (4)
+                            </option>
+                            <option value="EC">
+                                Ecuador (101)
+                            </option>
+                            <option value="GH">
+                                Ghana (4)
+                            </option>
+                            <option value="TZ">
+                                Tanzania, the United Republic of (14)
+                            </option>
+                            <option value="AL">
+                                Albania (20)
+                            </option>
+                            <option value="NZ">
+                                New Zealand (9)
+                            </option>
+                            <option value="BJ">
+                                Benin (1)
+                            </option>
+                            <option value="CH">
+                                Switzerland (39)
+                            </option>
+                            <option value="LY">
+                                Libya (32)
+                            </option>
+                            <option value="RS">
+                                Serbia (20)
+                            </option>
+                            <option value="PK">
+                                Pakistan (46)
+                            </option>
+                            <option value="IE">
+                                Ireland (37)
+                            </option>
+                            <option value="TW">
+                                Taiwan (Province of China) (14)
+                            </option>
+                            <option value="PR">
+                                Puerto Rico (13)
+                            </option>
+                            <option value="TC">
+                                Turks and Caicos Islands (3)
+                            </option>
+                            <option value="IS">
+                                Iceland (3)
+                            </option>
+                            <option value="PE">
+                                Peru (65)
+                            </option>
+                            <option value="MW">
+                                Malawi (2)
+                            </option>
+                            <option value="VE">
+                                Venezuela (Bolivarian Republic of) (68)
+                            </option>
+                            <option value="BS">
+                                Bahamas (2)
+                            </option>
+                            <option value="HU">
+                                Hungary (28)
+                            </option>
+                            <option value="SC">
+                                Seychelles (20)
+                            </option>
+                            <option value="NO">
+                                Norway (3)
+                            </option>
+                            <option value="-">
+                                - (85)
+                            </option>
+                            <option value="MN">
+                                Mongolia (12)
+                            </option>
+                            <option value="NP">
+                                Nepal (23)
+                            </option>
+                            <option value="SN">
+                                Senegal (3)
+                            </option>
+                            <option value="PT">
+                                Portugal (7)
+                            </option>
+                            <option value="MD">
+                                Moldova (the Republic of) (5)
+                            </option>
+                            <option value="CI">
+                                Cote D&#x27;ivoire (2)
+                            </option>
+                            <option value="AO">
+                                Angola (3)
+                            </option>
+                            <option value="IL">
+                                Israel (41)
+                            </option>
+                            <option value="LB">
+                                Lebanon (3)
+                            </option>
+                            <option value="MT">
+                                Malta (2)
+                            </option>
+                            <option value="SI">
+                                Slovenia (3)
+                            </option>
+                            <option value="QA">
+                                Qatar (2)
+                            </option>
+                            <option value="PS">
+                                Palestine, State of (11)
+                            </option>
+                            <option value="BY">
+                                Belarus (6)
+                            </option>
+                            <option value="BO">
+                                Bolivia (Plurinational State of) (3)
+                            </option>
+                            <option value="UZ">
+                                Uzbekistan (9)
+                            </option>
+                            <option value="DO">
+                                Dominican Republic (54)
+                            </option>
+                            <option value="GD">
+                                Grenada (1)
+                            </option>
+                            <option value="CG">
+                                Congo (4)
+                            </option>
+                            <option value="AZ">
+                                Azerbaijan (6)
+                            </option>
+                            <option value="GE">
+                                Georgia (13)
+                            </option>
+                            <option value="PA">
+                                Panama (4)
+                            </option>
+                            <option value="TG">
+                                Togo (1)
+                            </option>
+                            <option value="NA">
+                                Namibia (3)
+                            </option>
+                            <option value="UY">
+                                Uruguay (3)
+                            </option>
+                            <option value="KG">
+                                Kyrgyzstan (7)
+                            </option>
+                            <option value="BW">
+                                Botswana (9)
+                            </option>
+                            <option value="ME">
+                                Montenegro (4)
+                            </option>
+                            <option value="LS">
+                                Lesotho (1)
+                            </option>
+                            <option value="TT">
+                                Trinidad and Tobago (1)
+                            </option>
+                            <option value="LU">
+                                Luxembourg (4)
+                            </option>
+                            <option value="OM">
+                                Oman (2)
+                            </option>
+                            <option value="BB">
+                                Barbados (1)
+                            </option>
+                            <option value="RW">
+                                Rwanda (2)
+                            </option>
+                            <option value="CM">
+                                Cameroon (2)
+                            </option>
+                            <option value="SA">
+                                Saudi Arabia (2)
+                            </option>
+                            <option value="BT">
+                                Bhutan (1)
+                            </option>
+                            <option value="MV">
+                                Maldives (2)
+                            </option>
+                            <option value="BI">
+                                Burundi (1)
+                            </option>
+                            <option value="WS">
+                                Samoa (1)
+                            </option>
+                            <option value="LA">
+                                Lao People&#x27;s Democratic Republic (1)
+                            </option>
+                            <option value="GA">
+                                Gabon (1)
+                            </option>
+                            <option value="SV">
+                                El Salvador (2)
+                            </option>
+                            <option value="AF">
+                                Afghanistan (1)
+                            </option>
+                            <option value="PG">
+                                Papua New Guinea (1)
+                            </option>
+                            <option value="MK">
+                                North Macedonia (1)
+                            </option>
+                            <option value="LK">
+                                Sri Lanka (1)
+                            </option>
+                            <option value="CD">
+                                Congo (the Democratic Republic of the) (1)
+                            </option>
+                            <option value="ZM">
+                                Zambia (1)
+                            </option>
+                            <option value="UG">
+                                Uganda (2)
+                            </option>
+                            <option value="MU">
+                                Mauritius (3)
+                            </option>
+                            <option value="GM">
+                                Gambia (1)
+                            </option>
+                            <option value="MM">
+                                Myanmar (3)
+                            </option>
+                            <option value="GQ">
+                                Equatorial Guinea (2)
+                            </option>
+                            <option value="MZ">
+                                Mozambique (1)
+                            </option>
+                            <option value="SL">
+                                Sierra Leone (1)
+                            </option>
+                </select>
+            </div>
+            
+            <div class="form-group" style="flex: 1; min-width: 150px;">
+                <label class="form-label">Max Speed (ms)</label>
+                <input type="number" name="speed" class="form-control" placeholder="e.g. 2000" value="">
+            </div>
+
+            <div class="form-group" style="flex: 1; min-width: 150px;">
+                <label class="form-label">Port</label>
+                <input type="number" name="port" class="form-control" placeholder="e.g. 8080" value="">
+            </div>
+            
+            <div class="form-group" style="flex: 0 0 auto; display: flex; gap: 10px;">
+                 <button type="submit" class="btn btn-primary">Filter Proxies</button>
+                 <a href="/" class="btn btn-outline">Reset</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Mini CTA Section -->
+<div class="mini-cta">
+    <div class="mini-cta-content">
+        <span style="font-size: 1.2rem;">🚀</span>
+        <div>
+            <strong>Need faster, stable proxies?</strong>
+            <span style="opacity: 0.9; font-size: 0.9rem;">Get premium access with 99.9% uptime.</span>
+        </div>
+    </div>
+    <a class="btn mini-cta-btn" href="/Promotions">View Deals &rarr;</a>
+</div>
+
+<div class="card">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3>Proxy List</h3>
+            <span class="badge badge-success" style="margin-left: 10px;">Found 278 proxies</span>
+    </div>
+
+    <div class="table-container">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>IP Address</th>
+                        <th>Port</th>
+                        <th>Country</th>
+                        <th>City</th>
+                        <th>Speed</th>
+                        <th>Type</th>
+                        <th>Anonymity</th>
+                        <th>Last Check</th>
+                    </tr>
+                </thead>
+                <tbody>
+                            <tr>
+                                <td style="font-weight: 500;">189.126.66.189</td>
+                                <td><a href="/?port=8080">8080</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Paraipaba">Paraipaba</span></td>
+                                <td>
+                                    <a href="/?speed=4639" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">4639 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:59%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">3 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">177.177.59.253</td>
+                                <td><a href="/?port=8080">8080</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Salvador">Salvador</span></td>
+                                <td>
+                                    <a href="/?speed=4968" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">4968 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:56%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">5 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">186.250.160.177</td>
+                                <td><a href="/?port=8090">8090</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Jandaira">Jandaira</span></td>
+                                <td>
+                                    <a href="/?speed=8346" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">8346 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:22%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">6 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">129.151.38.112</td>
+                                <td><a href="/?port=443">443</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Sao Paulo">Sao Paulo</span></td>
+                                <td>
+                                    <a href="/?speed=2390" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">2390 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:82%; background-color:#ffc107"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=https" class="badge badge-warning" style="margin-right: 2px;">https</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">14 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">164.152.45.253</td>
+                                <td><a href="/?port=443">443</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Sao Paulo">Sao Paulo</span></td>
+                                <td>
+                                    <a href="/?speed=2061" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">2061 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:85%; background-color:#ffc107"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=https" class="badge badge-warning" style="margin-right: 2px;">https</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">20 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">177.52.25.34</td>
+                                <td><a href="/?port=1080">1080</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Taquaritinga">Taquaritinga</span></td>
+                                <td>
+                                    <a href="/?speed=3540" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">3540 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:70%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=socks5" class="badge badge-warning" style="margin-right: 2px;">socks5</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">21 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">144.22.210.163</td>
+                                <td><a href="/?port=443">443</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Sao Paulo">Sao Paulo</span></td>
+                                <td>
+                                    <a href="/?speed=2291" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">2291 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:83%; background-color:#ffc107"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=https" class="badge badge-warning" style="margin-right: 2px;">https</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">28 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">200.229.192.220</td>
+                                <td><a href="/?port=443">443</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Sao Paulo">Sao Paulo</span></td>
+                                <td>
+                                    <a href="/?speed=1805" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">1805 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:87%; background-color:#ffc107"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=https" class="badge badge-warning" style="margin-right: 2px;">https</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">33 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">200.210.103.211</td>
+                                <td><a href="/?port=443">443</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Sao Paulo">Sao Paulo</span></td>
+                                <td>
+                                    <a href="/?speed=1960" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">1960 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:86%; background-color:#ffc107"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=https" class="badge badge-warning" style="margin-right: 2px;">https</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">42 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">170.81.131.70</td>
+                                <td><a href="/?port=3128">3128</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Ribeirao Preto">Ribeirao Preto</span></td>
+                                <td>
+                                    <a href="/?speed=4349" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">4349 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:62%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">43 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">137.131.171.208</td>
+                                <td><a href="/?port=443">443</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Sao Paulo">Sao Paulo</span></td>
+                                <td>
+                                    <a href="/?speed=2055" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">2055 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:85%; background-color:#ffc107"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=https" class="badge badge-warning" style="margin-right: 2px;">https</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">47 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">143.208.84.2</td>
+                                <td><a href="/?port=8589">8589</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Juranda">Juranda</span></td>
+                                <td>
+                                    <a href="/?speed=8933" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">8933 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:16%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">48 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">189.90.118.105</td>
+                                <td><a href="/?port=4153">4153</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Cantagalo">Cantagalo</span></td>
+                                <td>
+                                    <a href="/?speed=4076" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">4076 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:65%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=socks4" class="badge badge-warning" style="margin-right: 2px;">socks4</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">54 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">170.247.200.138</td>
+                                <td><a href="/?port=8088">8088</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Tutoia">Tutoia</span></td>
+                                <td>
+                                    <a href="/?speed=3130" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">3130 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:74%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.0 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">168.227.158.77</td>
+                                <td><a href="/?port=4145">4145</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Valenca">Valenca</span></td>
+                                <td>
+                                    <a href="/?speed=4606" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">4606 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:59%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=socks4" class="badge badge-warning" style="margin-right: 2px;">socks4</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.0 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">201.20.42.46</td>
+                                <td><a href="/?port=3128">3128</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Sao Paulo">Sao Paulo</span></td>
+                                <td>
+                                    <a href="/?speed=3271" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">3271 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:73%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.2 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">177.26.112.65</td>
+                                <td><a href="/?port=5678">5678</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Sao Paulo">Sao Paulo</span></td>
+                                <td>
+                                    <a href="/?speed=890" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">890 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:97%; background-color:#28a745"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=socks4" class="badge badge-warning" style="margin-right: 2px;">socks4</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.5 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">206.42.12.58</td>
+                                <td><a href="/?port=3131">3131</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Jaguaribe">Jaguaribe</span></td>
+                                <td>
+                                    <a href="/?speed=5029" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">5029 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:55%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.9 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">177.85.65.177</td>
+                                <td><a href="/?port=4153">4153</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Salvador">Salvador</span></td>
+                                <td>
+                                    <a href="/?speed=1215" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">1215 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:93%; background-color:#28a745"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=socks4" class="badge badge-warning" style="margin-right: 2px;">socks4</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.15 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">45.6.101.98</td>
+                                <td><a href="/?port=4153">4153</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Rio de Janeiro">Rio de Janeiro</span></td>
+                                <td>
+                                    <a href="/?speed=3991" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">3991 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:66%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=socks4" class="badge badge-warning" style="margin-right: 2px;">socks4</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.15 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">136.248.98.209</td>
+                                <td><a href="/?port=443">443</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Sao Paulo">Sao Paulo</span></td>
+                                <td>
+                                    <a href="/?speed=1894" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">1894 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:87%; background-color:#ffc107"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=https" class="badge badge-warning" style="margin-right: 2px;">https</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.17 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">191.44.125.11</td>
+                                <td><a href="/?port=8080">8080</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Fortaleza">Fortaleza</span></td>
+                                <td>
+                                    <a href="/?speed=9923" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">9923 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:6%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.19 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">168.205.255.238</td>
+                                <td><a href="/?port=443">443</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Brasilia">Brasilia</span></td>
+                                <td>
+                                    <a href="/?speed=1947" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">1947 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:86%; background-color:#ffc107"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=https" class="badge badge-warning" style="margin-right: 2px;">https</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.20 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">189.39.118.210</td>
+                                <td><a href="/?port=5678">5678</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Recife">Recife</span></td>
+                                <td>
+                                    <a href="/?speed=4421" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">4421 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:61%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=socks4" class="badge badge-warning" style="margin-right: 2px;">socks4</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.32 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">177.152.106.74</td>
+                                <td><a href="/?port=1080">1080</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Canto do Engenho">Canto do Engenho</span></td>
+                                <td>
+                                    <a href="/?speed=2388" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">2388 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:82%; background-color:#ffc107"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=socks4" class="badge badge-warning" style="margin-right: 2px;">socks4</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.34 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">201.71.24.65</td>
+                                <td><a href="/?port=8082">8082</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Pesqueira">Pesqueira</span></td>
+                                <td>
+                                    <a href="/?speed=8565" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">8565 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:20%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.35 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">200.205.240.130</td>
+                                <td><a href="/?port=3128">3128</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Sao Paulo">Sao Paulo</span></td>
+                                <td>
+                                    <a href="/?speed=4605" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">4605 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:59%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.37 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">152.233.16.174</td>
+                                <td><a href="/?port=9443">9443</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Sao Paulo">Sao Paulo</span></td>
+                                <td>
+                                    <a href="/?speed=1641" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">1641 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:89%; background-color:#ffc107"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=https" class="badge badge-warning" style="margin-right: 2px;">https</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.39 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">179.51.199.87</td>
+                                <td><a href="/?port=8099">8099</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Batalha">Batalha</span></td>
+                                <td>
+                                    <a href="/?speed=2625" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">2625 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:79%; background-color:#ffc107"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.39 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">189.124.85.77</td>
+                                <td><a href="/?port=33333">33333</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Presidente Bernardes">Presidente Bernardes</span></td>
+                                <td>
+                                    <a href="/?speed=2922" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">2922 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:76%; background-color:#ffc107"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.39 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">177.125.212.244</td>
+                                <td><a href="/?port=4145">4145</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Campo Mourao">Campo Mourao</span></td>
+                                <td>
+                                    <a href="/?speed=8478" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">8478 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:21%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=socks4" class="badge badge-warning" style="margin-right: 2px;">socks4</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.42 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">45.167.129.89</td>
+                                <td><a href="/?port=6666">6666</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Fortaleza">Fortaleza</span></td>
+                                <td>
+                                    <a href="/?speed=8263" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">8263 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:23%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.43 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">152.233.20.206</td>
+                                <td><a href="/?port=443">443</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Sao Paulo">Sao Paulo</span></td>
+                                <td>
+                                    <a href="/?speed=1895" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">1895 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:87%; background-color:#ffc107"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=https" class="badge badge-warning" style="margin-right: 2px;">https</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.45 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">187.62.241.136</td>
+                                <td><a href="/?port=8080">8080</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Inhoaiba">Inhoaiba</span></td>
+                                <td>
+                                    <a href="/?speed=2802" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">2802 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:77%; background-color:#ffc107"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.50 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">179.48.8.25</td>
+                                <td><a href="/?port=8088">8088</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Campo Maior">Campo Maior</span></td>
+                                <td>
+                                    <a href="/?speed=8700" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">8700 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:18%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.53 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">177.221.220.139</td>
+                                <td><a href="/?port=4145">4145</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Colider">Colider</span></td>
+                                <td>
+                                    <a href="/?speed=1398" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">1398 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:92%; background-color:#28a745"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=socks4" class="badge badge-warning" style="margin-right: 2px;">socks4</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.54 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">179.189.120.146</td>
+                                <td><a href="/?port=3128">3128</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Teresina">Teresina</span></td>
+                                <td>
+                                    <a href="/?speed=2775" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">2775 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:78%; background-color:#ffc107"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.55 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">187.86.153.254</td>
+                                <td><a href="/?port=30660">30660</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Grande">Grande</span></td>
+                                <td>
+                                    <a href="/?speed=1261" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">1261 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:93%; background-color:#28a745"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=socks4" class="badge badge-warning" style="margin-right: 2px;">socks4</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.59 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">170.239.18.90</td>
+                                <td><a href="/?port=1830">1830</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Salvador">Salvador</span></td>
+                                <td>
+                                    <a href="/?speed=8320" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">8320 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:22%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">1 h.59 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">189.20.109.147</td>
+                                <td><a href="/?port=4145">4145</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Sao Jose do Rio Preto">Sao Jose do Rio Preto</span></td>
+                                <td>
+                                    <a href="/?speed=949" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">949 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:96%; background-color:#28a745"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=socks4" class="badge badge-warning" style="margin-right: 2px;">socks4</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">2 h.1 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">187.19.201.217</td>
+                                <td><a href="/?port=8080">8080</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Joao Pessoa">Joao Pessoa</span></td>
+                                <td>
+                                    <a href="/?speed=7876" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">7876 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:27%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">2 h.4 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">187.19.128.76</td>
+                                <td><a href="/?port=3131">3131</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Sao Paulo">Sao Paulo</span></td>
+                                <td>
+                                    <a href="/?speed=1369" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">1369 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:92%; background-color:#28a745"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">2 h.4 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">45.238.112.228</td>
+                                <td><a href="/?port=56789">56789</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Fortaleza">Fortaleza</span></td>
+                                <td>
+                                    <a href="/?speed=6976" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">6976 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:36%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">2 h.13 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">143.208.152.62</td>
+                                <td><a href="/?port=3180">3180</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Rio de Janeiro">Rio de Janeiro</span></td>
+                                <td>
+                                    <a href="/?speed=1601" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">1601 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:89%; background-color:#ffc107"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">2 h.14 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">187.103.74.137</td>
+                                <td><a href="/?port=5678">5678</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Recife">Recife</span></td>
+                                <td>
+                                    <a href="/?speed=8341" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">8341 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:22%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=socks4" class="badge badge-warning" style="margin-right: 2px;">socks4</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">2 h.21 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">167.250.137.129</td>
+                                <td><a href="/?port=1080">1080</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Brejo Santo">Brejo Santo</span></td>
+                                <td>
+                                    <a href="/?speed=3865" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">3865 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:67%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=socks4" class="badge badge-warning" style="margin-right: 2px;">socks4</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">2 h.22 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">38.60.241.207</td>
+                                <td><a href="/?port=3128">3128</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Sao Paulo">Sao Paulo</span></td>
+                                <td>
+                                    <a href="/?speed=6794" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">6794 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:38%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">2 h.23 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">186.241.90.120</td>
+                                <td><a href="/?port=7890">7890</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Inhoaiba">Inhoaiba</span></td>
+                                <td>
+                                    <a href="/?speed=426" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">426 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:101%; background-color:#28a745"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=socks4" class="badge badge-warning" style="margin-right: 2px;">socks4</a>
+                                        <a href="/?type=socks5" class="badge badge-warning" style="margin-right: 2px;">socks5</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">2 h.23 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">143.255.109.76</td>
+                                <td><a href="/?port=1080">1080</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Aguas Lindas de Goias">Aguas Lindas de Goias</span></td>
+                                <td>
+                                    <a href="/?speed=1516" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">1516 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:90%; background-color:#ffc107"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=socks4" class="badge badge-warning" style="margin-right: 2px;">socks4</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=4">High</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">2 h.26 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;">201.20.95.226</td>
+                                <td><a href="/?port=8080">8080</a></td>
+                                <td>
+                                    <a href="/?country=BR" title="Brazil" class="country-cell">
+                                        <span class="flag flag-br"></span> 
+                                        <span class="text-truncate">Brazil</span>
+                                    </a>
+                                </td>
+                                <td><span class="text-truncate" title="Belem">Belem</span></td>
+                                <td>
+                                    <a href="/?speed=6179" style="text-decoration: none; color: inherit;">
+                                        <div style="display: flex; align-items: center; gap: 6px;">
+                                            <span style="font-size: 0.85em; color: var(--text-muted); min-width: 55px;">6179 ms</span>
+                                            <div class="speed-bar" style="width: 60px;">
+                                                <div class="speed-bar-fill" style="width:44%; background-color:#dc3545"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="/?type=http" class="badge badge-warning" style="margin-right: 2px;">http</a>
+                                </td>
+                                <td>
+                                    <a href="/?anonymity=1">No</a>
+                                </td>
+                                <td style="font-size: 0.9em; color: var(--text-muted); min-width: 100px;">2 h.28 minutes</td>
+                            </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Pagination -->
+        <div class="pagination">
+            
+                    <a href="?type=&amp;anonymity=&amp;country=BR&amp;speed=&amp;port=&amp;page=1" class="page-link active">1</a>
+                    <a href="?type=&amp;anonymity=&amp;country=BR&amp;speed=&amp;port=&amp;page=2" class="page-link ">2</a>
+                    <a href="?type=&amp;anonymity=&amp;country=BR&amp;speed=&amp;port=&amp;page=3" class="page-link ">3</a>
+ <span style="align-self: center;">...</span>                     <a href="?type=&amp;anonymity=&amp;country=BR&amp;speed=&amp;port=&amp;page=6" class="page-link">6</a>
+            
+                <a href="?type=&amp;anonymity=&amp;country=BR&amp;speed=&amp;port=&amp;page=2" class="page-link">&raquo;</a>
+        </div>
+</div>
+
+        
+        <div class="mt-3 text-center">
+            <!-- Footer Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-2267767860475779"
+                 data-ad-slot="6028293205"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FreeProxy.World</h3>
+                    <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">
+                        Providing high-quality free proxies for everyone. Secure, fast, and reliable.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/Filter/Country">Browse by Country</a></li>
+                        <li><a href="/Filter/Port">Browse by Port</a></li>
+                        <li><a href="/Promotions">VPN Deals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="/Faq">FAQ</a></li>
+                        <li><a href="/Privacy">Privacy Policy</a></li>
+                        <li><a href="/Donate">Buy Me a Coffee</a></li>
+                        <li><a href="/Contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2020 - 2026 FreeProxy.World. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/build/libs/jquery.min.js"></script>
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('show');
+        });
+    </script>
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138692554-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-138692554-2');
+    </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"316ee712f8f14dd7b2125304fc24231c","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1916fbfbc89a509',t:'MTc4MzcwNjA5Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
