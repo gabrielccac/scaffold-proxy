@@ -1,0 +1,242 @@
+[
+  {
+    "status": 200,
+    "method": "GET",
+    "type": "document",
+    "url": "https://www.freeproxy.world/?type=&anonymity=&country=BR&speed=&port=",
+    "body_len": 127611,
+    "body_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes\" />\n    <title>Free Proxy List Brazil - FreeProxy.World</title>\n    <meta name=\"keywords\" content=\"Free Proxy World, Free Proxy, HTTP proxy, HTTPS proxy, SOCKS4 proxy, SOCKS5 proxy, Proxy list\">\n    <meta name=\"description\" content=\"Worldwide free proxy list. Free fresh working proxy, including HTTP/SOCKS/SSL\">\n    <li"
+  },
+  {
+    "status": 200,
+    "method": "GET",
+    "type": "document",
+    "url": "https://googleads.g.doubleclick.net/pagead/html/r20260709/r20190131/zrt_lookup_fy2021.html",
+    "body_len": 8479,
+    "body_preview": "<!DOCTYPE html><script>\n(function(){'use strict';/*\n\n Copyright The Closure Library Authors.\n SPDX-License-Identifier: Apache-2.0\n*/\nvar p=this||self;function q(){var a=p.navigator;return a&&(a=a.userAgent)?a:\"\"};function x(a,b){Array.prototype.forEach.call(a,b,void 0)};function y(a){y[\" \"](a);return a}y[\" \"]=function(){};var aa=q().toLowerCase().indexOf(\"webkit\")!=-1&&q().indexOf(\"Edge\")==-1;function z(a,b){if(a)for(let c in a)Object.prototype.hasOwnProperty.call(a,c)&&b(a[c],c,a)};function B(a"
+  },
+  {
+    "status": 200,
+    "method": "POST",
+    "type": "xhr",
+    "url": "https://www.freeproxy.world/cdn-cgi/challenge-platform/h/g/jsd/oneshot/73f5d73b1f13/0.23905420256527188:1783702839:k_pfmK2r1EIeoQ4tHnXOFRsWbaar_jctxkP_mR30So0/a1916fbfbc89a509",
+    "body_len": 0,
+    "body_preview": ""
+  },
+  {
+    "status": 200,
+    "method": "GET",
+    "type": "document",
+    "url": "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2267767860475779&output=html&h=280&adk=3088186576&adf=3247881204&pi=t.aa~a.1678817894~rp.4&abgtt=6&w=1200&fwrn=4&fwrnh=100&lmt=1783706097&rafmt=1&to=qs&pwprc=7440507570&format=1200x280&url=https%3A%2F%2Fwww.freeproxy.world%2F%3Ftype%3D%26anonymity%3D%26country%3DBR%26speed%3D%26port%3D&fwr=0&pra=3&rpe=1&resp_fmts=3&fa=40&uach=WyJXaW5kb3dzIiwiMTAuMCIsIng4NiIsIiIsIjE0OS4wLjc4MjcuNTUiLG51bGwsMCxudWxsLCI2NCIsW1siSGVhZGxlc3NDaHJvbWUiLCIxNDkuMC43ODI3LjU1Il0sWyJDaHJvbWl1bSIsIjE0OS4wLjc4MjcuNTUiXSxbIk5vdClBO0JyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&dt=1783706097151&bpp=1&bdt=149&idt=47&shv=r20260709&mjsv=m202607070101&ptt=9&saldr=aa&abxe=1&cookie_enabled=1&eoidce=1&prev_fmts=0x0&nras=2&correlator=3625089410627&frm=20&pv=1&u_tz=0&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&dmc=16&adx=40&ady=335&biw=1280&bih=720&scr_x=0&scr_y=0&eid=31099586%2C42533293%2C95390278&oid=2&pvsid=7029027876330172&tmod=1345668281&uas=0&nvt=1&fc=1920&brdim=0%2C0%2C0%2C0%2C1280%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=128&bc=31&bz=1&ifi=2&uci=a!2&fsb=1&dtd=50",
+    "body_len": 859,
+    "body_preview": "<!DOCTYPE html><html><head><script>window.top.postMessage('{\"msg_type\":\"resize-me\",\"key_value\":[{\"key\":\"r_nh\",\"value\":\"0\"},{\"key\":\"r_ifr\",\"value\":\"true\"},{\"key\":\"qid\",\"value\":\"CJmOwYLXyJUDFXBHwwYdNrcjyw\"}],\"googMsgType\":\"sth\"}', '*');</script><script>window.top.postMessage('{\"msg_type\":\"adsense-labs\",\"key_value\":[{\"key\":\"settings\",\"value\":\"[\\\\\\\"ca-pub-2267767860475779\\\\\\\",[[1]],null,[[\\\\\\\"ID=cf51737524405bda:T=1783706097:RT=1783706097:S=ALNI_MaS8VZ50d218FKdW3t3pjhKHz-ZRg\\\\\\\",1817402097,\\\\\\\"/\\\\\\\""
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "fetch",
+    "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-H19S2TE1ZB&gtm=45je6790h2v9110054953za20g&_p=1783706097460&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=EAAI&are=1&cid=291318349.1783706098&frm=0&ir=1&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938469~118826209~118897920~118897930~119027224~119773331&sid=1783706097&sct=1&seg=0&dl=https%3A%2F%2Fwww.freeproxy.world%2F%3Ftype%3D%26anonymity%3D%26country%3DBR%26speed%3D%26port%3D&dt=Free%20Proxy%20List%20Brazil%20-%20FreeProxy.World&en=page_view&_fv=1&_ss=1&tfd=1124",
+    "body_len": null,
+    "body_preview": "<err reading body: Response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier>"
+  },
+  {
+    "status": 200,
+    "method": "GET",
+    "type": "document",
+    "url": "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2267767860475779&output=html&adk=1812271804&adf=3025194257&abgtt=6&lmt=1783706097&plat=3%3A16%2C4%3A16%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32%2C43%3A32%2C44%3A32&format=0x0&url=https%3A%2F%2Fwww.freeproxy.world%2F%3Ftype%3D%26anonymity%3D%26country%3DBR%26speed%3D%26port%3D&pra=5&asro=0&aimartd=4&uach=WyJXaW5kb3dzIiwiMTAuMCIsIng4NiIsIiIsIjE0OS4wLjc4MjcuNTUiLG51bGwsMCxudWxsLCI2NCIsW1siSGVhZGxlc3NDaHJvbWUiLCIxNDkuMC43ODI3LjU1Il0sWyJDaHJvbWl1bSIsIjE0OS4wLjc4MjcuNTUiXSxbIk5vdClBO0JyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&dt=1783706097112&bpp=39&bdt=110&idt=58&shv=r20260709&mjsv=m202607070101&ptt=9&saldr=aa&abxe=1&cookie_enabled=1&eoidce=1&nras=1&correlator=3625089410627&frm=20&pv=2&u_tz=0&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&dmc=16&adx=-12245933&ady=-12245933&biw=1280&bih=720&scr_x=0&scr_y=0&eid=31099586%2C42533293%2C95390278&oid=2&pvsid=7029027876330172&tmod=1345668281&uas=0&nvt=1&fsapi=1&fc=1920&brdim=0%2C0%2C0%2C0%2C1280%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=32768&bc=31&bz=1&ifi=1&uci=a!1&fsb=1&dtd=83",
+    "body_len": 179695,
+    "body_preview": "<script>window.sra_later_blocks = [];</script><script>window.sra_later_blocks.push({creative:'\\x3c!doctype html\\x3e\\x3chtml \\x3e\\x3chead\\x3e\\x3cstyle\\x3e* {margin: 0;padding: 0;outline: none;}body {background: rgba(52, 58, 65, 0.5);backdrop-filter: blur(5px); /*potential issue: minimal browser support*/-webkit-backdrop-filter: blur(5px); /*for safari*/width: 100%;height: 100%;}#ad_iframe {box-shadow: 0 !important;display: block;left: auto;margin: 0 auto;position: relative;top: auto;}.creative {t"
+  },
+  {
+    "status": 200,
+    "method": "GET",
+    "type": "document",
+    "url": "https://googleads.g.doubleclick.net/pagead/html/r20260709/r20190131/zrt_lookup_fy2021.html",
+    "body_len": 8479,
+    "body_preview": "<!DOCTYPE html><script>\n(function(){'use strict';/*\n\n Copyright The Closure Library Authors.\n SPDX-License-Identifier: Apache-2.0\n*/\nvar p=this||self;function q(){var a=p.navigator;return a&&(a=a.userAgent)?a:\"\"};function x(a,b){Array.prototype.forEach.call(a,b,void 0)};function y(a){y[\" \"](a);return a}y[\" \"]=function(){};var aa=q().toLowerCase().indexOf(\"webkit\")!=-1&&q().indexOf(\"Edge\")==-1;function z(a,b){if(a)for(let c in a)Object.prototype.hasOwnProperty.call(a,c)&&b(a[c],c,a)};function B(a"
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "xhr",
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXP8bmG2jcyE82YYmA1X3hM3jVy9MqmjFd3DfEwFUJueqodKp6zv07gpAJRvidNvqWA-ZTyuM4we0iMaK8dGgNHKmvTNiD3NrL-7ekpnlJpjZIpjPAY7rWBu3tE4Ss7fsUqryKx7A==",
+    "body_len": 0,
+    "body_preview": ""
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "xhr",
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXP8bmG2jcyE82YYmA1X3hM3jVy9MqmjFd3DfEwFUJueqodKp6zv07gpAJRvidNvqWA-ZTyuM4we0iMaK8dGgNHKmvTNiD3NrL-7ekpnlJpjZIpjPAY7rWBu3tE4Ss7fsUqryKx7A==",
+    "body_len": 0,
+    "body_preview": ""
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "xhr",
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXP8bmG2jcyE82YYmA1X3hM3jVy9MqmjFd3DfEwFUJueqodKp6zv07gpAJRvidNvqWA-ZTyuM4we0iMaK8dGgNHKmvTNiD3NrL-7ekpnlJpjZIpjPAY7rWBu3tE4Ss7fsUqryKx7A==",
+    "body_len": 0,
+    "body_preview": ""
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "xhr",
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXP8bmG2jcyE82YYmA1X3hM3jVy9MqmjFd3DfEwFUJueqodKp6zv07gpAJRvidNvqWA-ZTyuM4we0iMaK8dGgNHKmvTNiD3NrL-7ekpnlJpjZIpjPAY7rWBu3tE4Ss7fsUqryKx7A==",
+    "body_len": 0,
+    "body_preview": ""
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "fetch",
+    "url": "https://pagead2.googlesyndication.com/pagead/ping?e=1",
+    "body_len": null,
+    "body_preview": "<err reading body: Response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier>"
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "xhr",
+    "url": "https://www.freeproxy.world/cdn-cgi/rum?",
+    "body_len": 0,
+    "body_preview": ""
+  },
+  {
+    "status": 200,
+    "method": "GET",
+    "type": "xhr",
+    "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260709&st=env&sjk=7029027876330172",
+    "body_len": 18070,
+    "body_preview": "{\"sodar_query_id\":\"8jFRapPDCq29p9oP2MvjiQ0\",\"injector_basename\":\"sodar2\",\"bg_hash_basename\":\"FtD5pCbHUPL3PaZwE8nr3y33ChZ0luvzaU3k5GQkcaA\",\"bg_binary\":\"XOzyJqXzOYhDa9YJmqYJ3ZUfNiLDes9exqQpYbWUomJPLrWDnl0JCW0DasICrH/qJEWr8dPb+EoStGh3cYC9xjjLeMT2h3Q9FSS3zQX7Idc5IBwpoFGix0lfcX7lChdRHSO9XkLkMA3dNwZxX19iUyNUaq2AYLvWExm/nqwowXGBLk5+mshtOh69kjAiTIEjrRKLlnMjj8jyUWc0fuNm/ZKbU2XHQw+hGzEveNvGcG7dXaNrwZ59qQOBjsV9VwB57pA4TwU6O0j4/0ENJLNKcZzvNkDDR9F5Y2oOrXc+vIbinLZ/9aqQGkp22GrbiI9Vw8PBoEOMaoP7JW/2Xr3GiRDHDJHiO"
+  },
+  {
+    "status": 200,
+    "method": "GET",
+    "type": "document",
+    "url": "https://ep2.adtrafficquality.google/sodar/sodar2/255/runner.html",
+    "body_len": 14627,
+    "body_preview": "<!DOCTYPE html>\n<meta charset=utf-8><script>\n(function(){'use strict';var aa=typeof Object.create==\"function\"?Object.create:function(a){function b(){}b.prototype=a;return new b},h=typeof Object.defineProperties==\"function\"?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};\nfunction ba(a){a=[\"object\"==typeof globalThis&&globalThis,a,\"object\"==typeof window&&window,\"object\"==typeof self&&self,\"object\"==typeof global&&global];for(var b="
+  },
+  {
+    "status": 200,
+    "method": "GET",
+    "type": "document",
+    "url": "https://www.google.com/recaptcha/api2/aframe",
+    "body_len": 829,
+    "body_preview": "<!DOCTYPE HTML><html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"></head><body><script nonce=\"a2zdjyNspwBaBkfeKVriuw\">/** Anti-fraud and anti-abuse applications only. See google.com/recaptcha */ try{var clients={'sodar':'https://pagead2.googlesyndication.com/pagead/sodar?'};window.addEventListener(\"message\",function(a){try{if(a.source===window.parent){var b=JSON.parse(a.data);var c=clients[b['id']];if(c){var d=document.createElement('img');d.src=c+b['params']+'&rc='+("
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "xhr",
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXP8bmG2jcyE82YYmA1X3hM3jVy9MqmjFd3DfEwFUJueqodKp6zv07gpAJRvidNvqWA-ZTyuM4we0iMaK8dGgNHKmvTNiD3NrL-7ekpnlJpjZIpjPAY7rWBu3tE4Ss7fsUqryKx7A==",
+    "body_len": 0,
+    "body_preview": ""
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "xhr",
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXP8bmG2jcyE82YYmA1X3hM3jVy9MqmjFd3DfEwFUJueqodKp6zv07gpAJRvidNvqWA-ZTyuM4we0iMaK8dGgNHKmvTNiD3NrL-7ekpnlJpjZIpjPAY7rWBu3tE4Ss7fsUqryKx7A==",
+    "body_len": 0,
+    "body_preview": ""
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "xhr",
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXP8bmG2jcyE82YYmA1X3hM3jVy9MqmjFd3DfEwFUJueqodKp6zv07gpAJRvidNvqWA-ZTyuM4we0iMaK8dGgNHKmvTNiD3NrL-7ekpnlJpjZIpjPAY7rWBu3tE4Ss7fsUqryKx7A==",
+    "body_len": 0,
+    "body_preview": ""
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "xhr",
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXP8bmG2jcyE82YYmA1X3hM3jVy9MqmjFd3DfEwFUJueqodKp6zv07gpAJRvidNvqWA-ZTyuM4we0iMaK8dGgNHKmvTNiD3NrL-7ekpnlJpjZIpjPAY7rWBu3tE4Ss7fsUqryKx7A==",
+    "body_len": 0,
+    "body_preview": ""
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "xhr",
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXP8bmG2jcyE82YYmA1X3hM3jVy9MqmjFd3DfEwFUJueqodKp6zv07gpAJRvidNvqWA-ZTyuM4we0iMaK8dGgNHKmvTNiD3NrL-7ekpnlJpjZIpjPAY7rWBu3tE4Ss7fsUqryKx7A==",
+    "body_len": 0,
+    "body_preview": ""
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "xhr",
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXP8bmG2jcyE82YYmA1X3hM3jVy9MqmjFd3DfEwFUJueqodKp6zv07gpAJRvidNvqWA-ZTyuM4we0iMaK8dGgNHKmvTNiD3NrL-7ekpnlJpjZIpjPAY7rWBu3tE4Ss7fsUqryKx7A==",
+    "body_len": 0,
+    "body_preview": ""
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "xhr",
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXP8bmG2jcyE82YYmA1X3hM3jVy9MqmjFd3DfEwFUJueqodKp6zv07gpAJRvidNvqWA-ZTyuM4we0iMaK8dGgNHKmvTNiD3NrL-7ekpnlJpjZIpjPAY7rWBu3tE4Ss7fsUqryKx7A==",
+    "body_len": 0,
+    "body_preview": ""
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "xhr",
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxUEaL_exZul0szgOYOmPsRhmbh_5smwGfd6EVidATOmT1MBb5u5lgVSjlVLo_1qJUhlEWsFAHuMNBK4iKQY5k9PMWCtxBYW5sPaZ2wbq-_Mk8ZWObV5Cu2C-vdW9EdBfNf2XLekAw==",
+    "body_len": 0,
+    "body_preview": ""
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "xhr",
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxWN8eSWG5ZBuyWZbqgiIBEMH1gnnnzTEMOr9LROIoqm8FbqeZe5yA4Rv7hAnM2rpgKpNPB_0GS2mrqqwaX8-i09Hox4dyCyKHJITxzkS94h6rXNlGPILNPhHqL5DPavs0mKWhPcMA==",
+    "body_len": 0,
+    "body_preview": ""
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "xhr",
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXP8bmG2jcyE82YYmA1X3hM3jVy9MqmjFd3DfEwFUJueqodKp6zv07gpAJRvidNvqWA-ZTyuM4we0iMaK8dGgNHKmvTNiD3NrL-7ekpnlJpjZIpjPAY7rWBu3tE4Ss7fsUqryKx7A==",
+    "body_len": 0,
+    "body_preview": ""
+  },
+  {
+    "status": 204,
+    "method": "POST",
+    "type": "xhr",
+    "url": "https://www.freeproxy.world/cdn-cgi/rum?",
+    "body_len": 0,
+    "body_preview": ""
+  },
+  {
+    "status": 200,
+    "method": "GET",
+    "type": "fetch",
+    "url": "https://googleads.g.doubleclick.net/pagead/adview?ai=Cg5gj8TFRas6nEpa7geAP0af4mAL6j4XmbaCDqMWtDcCNtwEQASCp7oQnYMmm9YvMpKwZyAEJqAMByAMCqgTxAU_Qm1F---jc9fYy-IucROZYhCijEw2CvpfcT95sUq33WjZtkVeN5PeXIX5xRpBgrcIs6qO8tKZ_h-oD7jvAIYpzwqPCJcVqYGvq9I7p2yCn-e4Cw3NC3_E_tbVjE5sXvRLKBlXO31lHVKYbabeAtJhoRGiNGqfZ81EUogySNVvx3noeOpMXDP6sVPybsIO7Mty_KJ-X__bFr8d6xBFoFR58oh8tXHI7kXyiy9zGBKK6ClCclI1XfrhKbTlDUhKCPQqbjsf1UDY0gnOKuFOR6Z6gLnMDIVB_Vq9k19l0cKiREcGmrEd1g-PviCUbJxKGzk2ABuK-h4ue5biFjwGgBiGoB5PYsQKoB5TYsQKoB5XYsQKoB6a-G6gHltgbqAeqm7ECqAf_nrECqAffn7ECqAetvrEC2AcA0ggwCIBhEAEyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDkBBIvf3BOlj5372C18iVA2AAgAoB-gsCCAGADAGqDQJVU-oNEwjR6MCC18iVAxWWXQAGHdETHiOIDgnQFQGAFwGyFx4KGBIUcHViLTIyNjc3Njc4NjA0NzU3NzkYABgMUAE&sigh=gKqwdR7lmz4&uach_m=%5BUACH%5D&sreq=1&cid=CAQShwIAEQoqgQbz2aPGTj9VUjDZ3k0BnH2kdXoepOwWN_pIv5rMimhJ2ysGlN_qQfEOmE5IMwMjJ6H0HA7h5-FfCdmsDd6KfzEgylZ5L0gL6VavMy1hZi9CuGuLNkT_uqbCp7jHgqVPLlaPNjV7mVouW1tJsbmaM_2Bav8PKx135izzF4mJ-vD3CazvOb5koM1eAT0u387qcIXFCAyyabvqBSd4nrdISkhVG2XFSrH0Eh1oZTcwGfCwdNubD7MTOR9ZB6f45QgY9rEhGitx7cJbwWQUB4gEV4ERARGfFzY7p0_QtBQ5euAQvysKt-pD832iUw_mKHcOSeTdninZfdn8kTpbdWjIdKU5thgB&tpd=AGWhJms_HhkHhB4S_VeydrprdFYugnfIQl5MxWSmv9EiA41fgdR8xGBJUmxGipMPmVmgf9sqFDAjmeCaU0qWKZAvgvg42qZw2iYgpBpGq1lTKNocosRUzFbWC7dmVXs2jEyEkDojx3XOVZeZYuxF9x-loEGnExIUI3RpgXDnmv6b10P63u1B36j_5jYiswwPP-_m2TZ0o211eW37b1WKxnoHA19hHPKzWMBPQWuKq0SBIiL0a_Ccqiw5uAiAnqE8mB2zLwooIIhbfSIc71TTR8EfhLdZjAh7hoDo6H9AViqfjUkfT_UUTq2Z35NWsIvOxKJT1fFkx43fE_S8hGxEFg&vis=1&itt=1",
+    "body_len": null,
+    "body_preview": "<err reading body: Response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier>"
+  },
+  {
+    "status": 200,
+    "method": "GET",
+    "type": "document",
+    "url": "https://googleads.g.doubleclick.net/pagead/ads?gdpr=0&client=ca-pub-2267767860475779&output=html&h=280&adk=1213588912&adf=2125710545&pi=t.aa~a.4087217803~rp.4&abgtt=6&w=1200&fwrn=4&fwrnh=100&lmt=1783706102&rafmt=1&to=qs&pwprc=7440507570&format=1200x280&url=https%3A%2F%2Fwww.freeproxy.world%2F%3Ftype%3D%26anonymity%3D%26country%3DBR%26speed%3D%26port%3D%23google_vignette&fwr=0&pra=3&rpe=1&resp_fmts=3&fa=40&uach=WyJXaW5kb3dzIiwiMTAuMCIsIng4NiIsIiIsIjE0OS4wLjc4MjcuNTUiLG51bGwsMCxudWxsLCI2NCIsW1siSGVhZGxlc3NDaHJvbWUiLCIxNDkuMC43ODI3LjU1Il0sWyJDaHJvbWl1bSIsIjE0OS4wLjc4MjcuNTUiXSxbIk5vdClBO0JyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&dt=1783706097919&bpp=1&bdt=916&idt=0&shv=r20260709&mjsv=m202607070101&ptt=9&saldr=aa&abxe=1&cookie=ID%3Dcf51737524405bda%3AT%3D1783706097%3ART%3D1783706097%3AS%3DALNI_MaS8VZ50d218FKdW3t3pjhKHz-ZRg&gpic=UID%3D0000141dcd673fc7%3AT%3D1783706097%3ART%3D1783706097%3AS%3DALNI_MbKsfjvcF5EtjSXdvJU1M_EdbIqJA&eo_id_str=ID%3D9a3ed3bce0f2856c%3AT%3D1783706097%3ART%3D1783706097%3AS%3DAA-AfjZ8SJ6PK1PwI46Hv-OtoDiR&prev_fmts=0x0%2C1200x280%2C1280x720&nras=4&correlator=3625089410627&frm=20&pv=1&u_tz=0&u_his=3&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&dmc=16&adx=40&ady=4553&biw=1280&bih=720&scr_x=0&scr_y=3547&eid=31099586%2C42533293%2C95390278&oid=2&pvsid=7029027876330172&tmod=1345668281&uas=3&nvt=1&fc=1920&brdim=0%2C0%2C0%2C0%2C1280%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=128&bc=31&bz=1&ifi=4&uci=a!4&btvi=1&fsb=1&dtd=4553",
+    "body_len": 436,
+    "body_preview": "<!DOCTYPE html><html><head><script>window.top.postMessage('{\"msg_type\":\"resize-me\",\"key_value\":[{\"key\":\"r_nh\",\"value\":\"0\"},{\"key\":\"r_ifr\",\"value\":\"true\"},{\"key\":\"qid\",\"value\":\"CNiAgoXXyJUDFf9fAAYd57cFNQ\"}],\"googMsgType\":\"sth\"}', '*');</script><script>window.top.postMessage('{\"msg_type\":\"adsense-labs\",\"key_value\":[{\"key\":\"settings\",\"value\":\"[\\\\\\\"ca-pub-2267767860475779\\\\\\\",[[1]]]\"}],\"googMsgType\":\"sth\"}', '*');</script></head></html>"
+  },
+  {
+    "status": 200,
+    "method": "GET",
+    "type": "document",
+    "url": "https://googleads.g.doubleclick.net/pagead/ads?gdpr=0&client=ca-pub-2267767860475779&output=html&h=280&slotname=6028293205&adk=4274731756&adf=4274929953&pi=t.ma~as.6028293205&abgtt=6&w=1200&fwrn=4&fwrnh=100&lmt=1783706102&rafmt=1&format=1200x280&url=https%3A%2F%2Fwww.freeproxy.world%2F%3Ftype%3D%26anonymity%3D%26country%3DBR%26speed%3D%26port%3D%23google_vignette&fwr=0&fwrattr=true&rpe=1&resp_fmts=3&uach=WyJXaW5kb3dzIiwiMTAuMCIsIng4NiIsIiIsIjE0OS4wLjc4MjcuNTUiLG51bGwsMCxudWxsLCI2NCIsW1siSGVhZGxlc3NDaHJvbWUiLCIxNDkuMC43ODI3LjU1Il0sWyJDaHJvbWl1bSIsIjE0OS4wLjc4MjcuNTUiXSxbIk5vdClBO0JyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&dt=1783706097448&bpp=1&bdt=445&idt=0&shv=r20260709&mjsv=m202607070101&ptt=9&saldr=aa&abxe=1&cookie=ID%3Dcf51737524405bda%3AT%3D1783706097%3ART%3D1783706097%3AS%3DALNI_MaS8VZ50d218FKdW3t3pjhKHz-ZRg&gpic=UID%3D0000141dcd673fc7%3AT%3D1783706097%3ART%3D1783706097%3AS%3DALNI_MbKsfjvcF5EtjSXdvJU1M_EdbIqJA&eo_id_str=ID%3D9a3ed3bce0f2856c%3AT%3D1783706097%3ART%3D1783706097%3AS%3DAA-AfjZ8SJ6PK1PwI46Hv-OtoDiR&prev_fmts=0x0%2C1200x280%2C1280x720%2C1200x280&nras=4&correlator=3625089410627&frm=20&pv=1&u_tz=0&u_his=3&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&dmc=16&adx=40&ady=3976&biw=1280&bih=720&scr_x=0&scr_y=3547&eid=31099586%2C42533293%2C95390278&oid=2&pvsid=7029027876330172&tmod=1345668281&uas=3&nvt=1&fc=1920&brdim=0%2C0%2C0%2C0%2C1280%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7CEe%7C&abl=CS&pfx=0&fu=128&bc=31&bz=1&ifi=3&uci=a!3&fsb=1&dtd=5034",
+    "body_len": 436,
+    "body_preview": "<!DOCTYPE html><html><head><script>window.top.postMessage('{\"msg_type\":\"resize-me\",\"key_value\":[{\"key\":\"r_nh\",\"value\":\"0\"},{\"key\":\"r_ifr\",\"value\":\"true\"},{\"key\":\"qid\",\"value\":\"COupgoXXyJUDFRpGwwYd9lonxg\"}],\"googMsgType\":\"sth\"}', '*');</script><script>window.top.postMessage('{\"msg_type\":\"adsense-labs\",\"key_value\":[{\"key\":\"settings\",\"value\":\"[\\\\\\\"ca-pub-2267767860475779\\\\\\\",[[1]]]\"}],\"googMsgType\":\"sth\"}', '*');</script></head></html>"
+  }
+]

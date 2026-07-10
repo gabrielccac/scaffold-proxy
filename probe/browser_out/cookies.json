@@ -1,0 +1,124 @@
+[
+  {
+    "name": "_gid",
+    "value": "GA1.2.1032620402.1783706098",
+    "domain": ".freeproxy.world",
+    "path": "/",
+    "expires": 1783792497,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_gat_gtag_UA_138692554_2",
+    "value": "1",
+    "domain": ".freeproxy.world",
+    "path": "/",
+    "expires": 1783706157,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "cf_clearance",
+    "value": "CTWXMLYwmBPpZF69U4NWCAdhj5qB.5CWK6Fc24lgjjQ-1783706097-1.2.1.1-rOu3z5XCN1WB2tRmG6HEYHJaUZa.3vVtzqKownUdaxN4OJ6JU6JyVic.gj4D0lksntTV7HxOewYt93d5G2wDEgqW5Dm5tv9RUqGfxlrxFr2hLW2tdeo36hQNUEWx.Z3pFD02_luyL9fz27XknJLTEeHLlxvK9PIe44ZniLfETb.O_ZbyAga9ZKVQr.LwF2ynuz3l5tdlkyggnBdtIgCXHWDEMFC.nQ5UjxQ8MuGal6XOarPiLiicb.GIaBFYRVk00TMeV2K7hzeqpgCoUiCAomtJTFMkfFWkm41qHcrIzYqt8yB.WtHHRn3w.WxacDagYCV7PJp9hKUjykY9x5G47g",
+    "domain": ".freeproxy.world",
+    "path": "/",
+    "expires": 1815242097.574922,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None",
+    "partitionKey": "https://freeproxy.world",
+    "_crHasCrossSiteAncestor": false
+  },
+  {
+    "name": "_ga_H19S2TE1ZB",
+    "value": "GS2.1.s1783706097$o1$g0$t1783706097$j60$l0$h0",
+    "domain": ".freeproxy.world",
+    "path": "/",
+    "expires": 1818266097.620646,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.1.291318349.1783706098",
+    "domain": ".freeproxy.world",
+    "path": "/",
+    "expires": 1818266097.62128,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "__gads",
+    "value": "ID=cf51737524405bda:T=1783706097:RT=1783706097:S=ALNI_MaS8VZ50d218FKdW3t3pjhKHz-ZRg",
+    "domain": ".freeproxy.world",
+    "path": "/",
+    "expires": 1817402097,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "__gpi",
+    "value": "UID=0000141dcd673fc7:T=1783706097:RT=1783706097:S=ALNI_MbKsfjvcF5EtjSXdvJU1M_EdbIqJA",
+    "domain": ".freeproxy.world",
+    "path": "/",
+    "expires": 1817402097,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "__eoi",
+    "value": "ID=9a3ed3bce0f2856c:T=1783706097:RT=1783706097:S=AA-AfjZ8SJ6PK1PwI46Hv-OtoDiR",
+    "domain": ".freeproxy.world",
+    "path": "/",
+    "expires": 1799258097,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "FCOEC",
+    "value": "%5B%5B%5B28%2C%22%5Bnull%2C%5Bnull%2C1%2C%5B1783706098%2C779016000%5D%2C0%5D%5D%22%5D%5D%5D",
+    "domain": ".freeproxy.world",
+    "path": "/",
+    "expires": 1815242098,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "FCCDCF",
+    "value": "%5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B32%2C%22%5B%5C%22a309c877-e92f-49a9-b9b0-0c90395d9620%5C%22%2C%5B1783706098%2C9000000%5D%5D%22%5D%5D%5D",
+    "domain": ".freeproxy.world",
+    "path": "/",
+    "expires": 1817402098,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "FCNEC",
+    "value": "%5B%5B%22AKsRol-gFLAckuboWspIUhBRbavx5eDgOkIijY-Cd8j7sfiR6PoCxgIc67sq3H1DX8UJ75Jev13GKk66ZVqlZ7hAkcip72KpTW-FFRqyLLTimXsMX4vN8mdR8GIoM6gAC3skn9CqZtwQ2DAZeCtkAkfpBFVvlnwkrw%3D%3D%22%5D%2Cnull%2C%5B%5B21%2C%22%5B%5B%5B%5B5%2C1%2C%5B8%5D%5D%2C%5B1783706098%2C738282000%5D%2C%5B1209600%5D%5D%5D%5D%22%5D%5D%5D",
+    "domain": ".freeproxy.world",
+    "path": "/",
+    "expires": 1815242098,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "IDE",
+    "value": "AHWqTUlkDghbZfYGjMqa_G4UPubgzQZIzg5X2srICpxJbgyv9SpoXzY-tel0y2t14iI",
+    "domain": ".doubleclick.net",
+    "path": "/",
+    "expires": 1818266102.823989,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  }
+]
